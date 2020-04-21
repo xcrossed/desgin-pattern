@@ -2,7 +2,7 @@
 
 ## design pattern list
 
-* [filter pattern/Chain of responsibility](https://github.com/xcrossed/desgin-pattern/filter-pattern/)
+* [filter pattern/Chain of responsibility](https://github.com/xcrossed/desgin-pattern/blob/master/filter-pattern/filter.go)
 
 * observer pattern/Observer or Publish/subscribe
 
