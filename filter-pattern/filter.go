@@ -82,6 +82,7 @@ func main() {
 
 	filterChain.AddFilter(new(AgeFilter))
 	filterChain.AddFilter(new(SexFilter))
+
 	reqObj := &RequestObj{
 		Name: "Tom",
 		Age:  10,
