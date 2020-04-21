@@ -49,11 +49,11 @@ type AgeFilter struct{}
 
 func (ageFilter *AgeFilter) DoFilter(fc FilterChain, val *RequestObj) error {
 	if val.Age > 10 && val.Age < 17 {
-		val.Desc = "少年"
+		val.Desc = "juvenile"
 	} else if val.Age >= 17 {
-		val.Desc += "成年人 "
+		val.Desc += "Adult "
 	} else {
-		val.Desc += "儿童 "
+		val.Desc += "child "
 	}
 	fmt.Println("AgeFilter req")
 	fc.DoFilter(val)
@@ -65,11 +65,11 @@ type SexFilter struct{}
 
 func (sexFilter *SexFilter) DoFilter(fc FilterChain, val *RequestObj) error {
 	if val.Sex == 1 {
-		val.Desc += "女 "
+		val.Desc += "female "
 	} else if val.Sex == 2 {
-		val.Desc += "男 "
+		val.Desc += "male "
 	} else {
-		val.Desc += "未知 "
+		val.Desc += "unkown "
 	}
 	fmt.Println("SexFilter req")
 	fc.DoFilter(val)
